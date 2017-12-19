@@ -82,6 +82,8 @@ public class RabbitConfig {
 		connectionFactory.setVirtualHost(vhost);
 		connectionFactory.setChannelCacheSize(sessionCacheSize);
 		connectionFactory.setCacheMode(cacheMode);
+		//sender的手工确认模式
+//		connectionFactory.setPublisherConfirms(true);
 		return connectionFactory;
 	 }
 	 /************routingConnectionFactory***********************/
